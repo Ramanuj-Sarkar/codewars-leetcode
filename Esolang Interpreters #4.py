@@ -1,4 +1,4 @@
-def boolfuck(code, input_string=""):
+def boolf(code, input_string=""):
     pointer = 0     # for instructions
     location = 0    # for tape
     tape = [0]
