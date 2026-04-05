@@ -1,3 +1,5 @@
+# You have to find the kth largest element
+# like the 2nd largest or 3rd largest.
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         
