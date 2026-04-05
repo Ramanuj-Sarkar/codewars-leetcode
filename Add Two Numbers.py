@@ -1,3 +1,5 @@
+# add two linked lists into another linked list
+# then return the head of that linked list
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         m1, m2 = l1, l2  # go through loop
@@ -5,6 +7,7 @@ class Solution:
         carry = 0
 
         while m1 or m2 or carry:
+            # returns the values of division and modulo
             carry, rem = divmod((m1.val if m1 else 0) +
                                 (m2.val if m2 else 0) +
                                 carry, 10)
