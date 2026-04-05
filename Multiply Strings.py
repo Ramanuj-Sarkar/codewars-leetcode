@@ -11,6 +11,7 @@ class Solution:
                 mul = (ord(num1[i]) - 48) * (ord(num2[j]) - 48)
 
                 # add to what was previously there
+                # then get integer division and remainder
                 carry, rem = divmod(mul + pos[i + j + 1], 10)
 
                 pos[i + j] += carry  # carry, you have to keep adding to it
