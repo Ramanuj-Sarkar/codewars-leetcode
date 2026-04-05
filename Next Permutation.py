@@ -1,4 +1,7 @@
-# comments should explain everything
+# You have a list like [1, 2, 3] which is like a number
+# If the original is the maximum value possible with those digits,
+# then you have to modify it to the minimum value with them.
+# Otherwise, you have to modify it so it indicates the next biggest number with these digits.
 class Solution:
     def nextPermutation(self, nums: List[int]) -> None:
         """
