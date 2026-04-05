@@ -1,3 +1,6 @@
+# find the order to take all classes in n
+# where some classes have prerequisites of other classes
+# and if you can't take all the classes, return an empty list
 class Solution:
     def findOrder(self, n: int, prerequisites: List[List[int]]) -> List[int]:
         # adjacency list
