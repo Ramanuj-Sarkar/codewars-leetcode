@@ -1,3 +1,5 @@
+# Find greatest sum of nodes in a binary tree
+# where nodes have integer values (positive/negative)
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -17,4 +19,7 @@ class Solution:
         left = max(self.dfs(node.left), 0)
         right = max(self.dfs(node.right), 0)
         self.ans = max(self.ans, node.val + left + right)
+        
+        # it returns this value to make left / right work
+        # the "actual" answer is in self.ans
         return node.val + max(left, right)
