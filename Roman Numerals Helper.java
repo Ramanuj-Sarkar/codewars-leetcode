@@ -1,3 +1,7 @@
+/*
+This turns a Roman numeral into an integer.
+It takes in a Roman numeral and returns an integer.
+*/
 public class RomanNumerals {
   
   public static String toRoman(int n) {
@@ -11,14 +15,14 @@ public class RomanNumerals {
   public static int fromRoman(String romanumeral) {
     int output = 0;
     String romanNumeral = romanumeral;
-    String[] ones = {"IX" ,"VIII" ,"VII" ,"VI" ,"V" ,"IV" ,"III" ,"II" ,"I"};
+    String[] ones = {"IX" ,"VIII" ,"VII" ,"VI" ,"V" ,"IV" ,"III" ,"II" ,"I"}; // all of these follow the same format
     for(int x = 0; x < ones.length; x++){
       if(romanNumeral.contains(ones[x])){
         if(romanNumeral.contains("IV")){
-          output += 4;
+          output += 4; // I did this because I was dumb and thought this would be helpful
         }
         else{
-          output += 9 - x;
+          output += 9 - x; // this is literally all I needed to do for all of these
         }
         romanNumeral = romanNumeral.substring(0,romanNumeral.length()-ones[x].length());
         break;
