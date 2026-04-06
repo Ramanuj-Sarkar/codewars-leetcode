@@ -1,6 +1,7 @@
+# Use a function called read4 to read N characters.
+# Return the number of characters read.
 # The read4 API is already defined for you.
 # def read4(buf4: List[str]) -> int:
-
 class Solution:
     def __init__(self):
         self.to_load = collections.deque() # this is used to analyze data in buf4
